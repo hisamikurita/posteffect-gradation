@@ -1,11 +1,9 @@
-# Xojo (formerly REALbasic and Real Studio)
-
-Builds*
-*.debug
-*.debug.app
-Debug*.exe
-Debug*/Debug*.exe
-Debug*/Debug*\ Libs
-*.rbuistate
-*.xojo_uistate
-*.obsolete
+.idea
+.atom
+.vscode
+.sass-cache
+.DS_Store
+node_modules
+npm-debug.log
+guide
+public
