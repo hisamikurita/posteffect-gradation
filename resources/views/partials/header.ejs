@@ -1,0 +1,30 @@
+<%
+var metadesc = 'This is a posteffect gradation using threejs.'
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<%= metadesc %>">
+  <meta property="og:url" content="<%= URL.HOME %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<%= title %>" />
+  <meta property="og:description" content="<%= metadesc %>" />
+  <meta property="og:site_name" content="<%= title %>" />
+  <meta property="og:image" content="<%= URL.HOME %>/assets/images/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="<%= URL.HOME %>/assets/css/app.css">
+  <title><%= title %></title>
+</head>
+<body>
+  <% /*
+  In development, if SVG is included in EJS,
+  injection of changes such as CSS by BrowserSync is prevented
+  Because svg-spritemap-webpack-plugin reacts for all changes,
+  and it causes EJS recompile and browser reloading
+  */ %>
+  <% if (process.env.NODE_ENV === 'production') { %>
+    <%- include('/../../public/assets/svg/sprite.svg') -%>
+  <% } %>
