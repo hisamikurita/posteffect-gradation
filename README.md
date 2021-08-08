@@ -2,9 +2,11 @@
 
 ● <a href="https://hisamikurita.github.io/posteffect-gradation/public/">DEMO</a>
 
-<img src="https://user-images.githubusercontent.com/47776346/124951627-78947c00-e04e-11eb-9a65-af4786f977c9.png">
+<img src="https://user-images.githubusercontent.com/47776346/128633398-3b09af3c-01a0-4344-b5ff-bfac559343b1.png">
 
-<img src="https://user-images.githubusercontent.com/47776346/125148854-264b7c00-e170-11eb-8e61-d163df1b1085.png">
+<img src="https://user-images.githubusercontent.com/47776346/128633402-7569e03d-5d9a-4706-be52-4dc1203f8433.png">
+
+<img src="https://user-images.githubusercontent.com/47776346/128633404-5efea081-c605-43a9-a121-a2ecba7fc86d.png">
 
 ## Usage
 * Clone repository<br>
