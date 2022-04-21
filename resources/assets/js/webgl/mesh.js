@@ -25,6 +25,8 @@ export default class Mesh {
       this.objColorParam.color_02,
       this.objColorParam.color_03
     ];
+
+    this.clock = new THREE.Clock();
   }
 
   init() {
@@ -161,7 +163,7 @@ export default class Mesh {
   }
 
   _render() {
-    this.uniforms.u_time.value += 0.005;
+    this.uniforms.u_time.value += this.clock.getDelta() / 4.0;
     this.composer.render();
   }
 

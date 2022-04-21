@@ -1,30 +1,23 @@
 import Mesh from './webgl/mesh';
 import Stage from './webgl/stage';
 
-export default class App {
-  constructor() {
-    const stage = new Stage();
-    stage.init();
+const stage = new Stage();
+stage.init();
 
-    const mesh = new Mesh(stage);
-    mesh.init();
+const mesh = new Mesh(stage);
+mesh.init();
 
-    window.addEventListener('resize', () => {
-      stage.onResize();
-      // mesh.onResize();
-    });
+window.addEventListener('resize', () => {
+  stage.onResize();
+});
 
-    const _raf = () => {
-      window.requestAnimationFrame(() => {
-        stage.onRaf();
-        mesh.onRaf();
-
-        _raf();
-      });
-    }
+const _raf = () => {
+  window.requestAnimationFrame(() => {
+    stage.onRaf();
+    mesh.onRaf();
 
     _raf();
-  }
+  });
 }
 
-new App();
+_raf();
