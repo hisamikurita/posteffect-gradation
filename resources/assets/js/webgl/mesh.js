@@ -163,7 +163,7 @@ export default class Mesh {
   }
 
   _render() {
-    this.uniforms.u_time.value += this.clock.getDelta() / 4.0;
+    this.uniforms.u_time.value += this.clock.getDelta() / 5.0;
     this.composer.render();
   }
 
