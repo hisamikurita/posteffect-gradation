@@ -155,6 +155,8 @@ export default class Mesh {
     gui.add(parameter, 'grayscale').name('grayscale').onChange((value) => {
       this.filmPass.uniforms.grayscale.value = value;
     });
+    // 公開ページでは調整用のパネルを出さない(調整したい時はこの行を消す)
+    gui.hide();
   }
 
   _colorChange(value, index) {
